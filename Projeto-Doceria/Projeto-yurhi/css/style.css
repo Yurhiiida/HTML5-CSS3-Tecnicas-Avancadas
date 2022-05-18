@@ -264,7 +264,7 @@ section {
     font-family: 'Open Sans', sans-serif;
 }
 
-#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+#form-contato input[type=text] :focus, #form-contato input[type=email] :focus, #form-contato textarea :focus {
     border-color: #2790C6;
 }
 
@@ -272,7 +272,7 @@ section {
     height: 150px;
 }
 
-#form-contato::placeholder {
+#form-contato ::placeholder {
     color: #2790C6;
 }
 
