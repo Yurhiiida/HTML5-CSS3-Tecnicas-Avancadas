@@ -1,0 +1,176 @@
+/* 
+    display: flex; -inicia o flex no container
+    flex-grow- da tamanho ao elemento preenchendo o espaços vazios
+    flex-shrink - o contrário do grow
+    flex-basis - o tamanho inicial do elemento, e o resto é preenchido pelo grow
+    flex: grow, shrink, basis; - shothand 
+    flex-direction - muda a direção que os elementos então(row, column)
+    flex-order - muda a ordem do elemento individualmente
+    justify-content - alinha os elementos no eixo principal
+    align-items - alinha os elementos no eixo secundário
+    align-self - alinha o elemento particular.
+    */
+
+
+
+
+/* Flex-grow */
+/* body {
+    background-color: #DDD;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    background-color: white;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: green;
+    flex-grow: 1;
+}
+
+.third {
+    background-color: blue;
+    flex-grow: 2;
+} */
+
+
+
+/* Flex-basis e Flex-shrink */
+/* body {
+    background-color: #DDD;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.box {
+    height: 100px;
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.first {
+    background-color: red;
+    flex-shrink: 1;
+}
+
+.second {
+    background-color: green;
+    flex-shrink: 1;
+}
+
+.third {
+    background-color: blue;
+    flex-shrink: 2;
+} */
+
+
+/* Flex-direction*/
+/* body {
+    background-color: #DDD;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: white;
+}
+
+.box {
+    height: 100px;
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: green;
+}
+
+.third {
+    background-color: blue;
+} */
+
+/* Flex-order */
+/* body {
+    background-color: #DDD;
+}
+.container {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.box {
+    height: 100px;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.first {
+    background-color: red;
+    order: 3;
+}
+
+.second {
+    background-color: green;
+    order: 1;
+}
+
+.third {
+    background-color: blue;
+    order: 2;
+} */
+
+/* Shorthand, justify-content, align-items, align-self. */
+body {
+    background-color: #DDD;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    /* flex: 1 1 auto; */
+    /* flex: grow, shrink, basis */
+    
+}
+
+.first {
+    background-color: red;
+    align-self: flex-start;
+}
+
+.second {
+    background-color: green;
+    align-self: flex-end;
+}
+
+.third {
+    background-color: blue;
+}
